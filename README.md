@@ -10,10 +10,12 @@ Filling NaN values with mean, median and mode using fillna() method
 Describe data --> which can give statistical analysis
 
 EDA
-From description we can see that Date_of_Journey is a object data type,
-Therefore, we have to convert this datatype into timestamp so as to use this column properly for prediction
-
+From description we can see that Date_of_Journey is a object data type, Therefore, we have to convert this datatype into timestamp so as to use this column properly for prediction
 For this we require pandas to_datetime to convert object data type to datetime dtype.
-
 .dt.day method will extract only day of that date
 .dt.month method will extract only month of that date
+
+This project is important fromt the standpoint that there are many values which exist as categorical variables. We convert them one by one
+So we get the required values in our desired types and drop those columns
+
+So we do this for Arrival and Departure Date and Time as well as Duration. 
